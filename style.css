@@ -8,15 +8,16 @@ h1, h2, h3, h4, h5, h6{ font-size: 100%; font-weight: normal;}
 q:before, q:after{ content: '';}
 abbr, acronym{ border: 0;}
 
-html{ min-width: 900px; overflow-y: scroll;}
-body{ background: #f7f7f7 url(debut_light.png) repeat; color: #333; font: 14px/1.5 'Open Sans', Verdana, Arial, sans-serif; margin: 2em 0;}
-a{ color: #449fdb; cursor: pointer; padding: 0.25em 0.5em; text-decoration: underline;}
+html{ min-width: 300px; overflow-y: scroll;}
+body{ background: #f7f7f7 url(debut_light.png) repeat; color: #999; font: 14px/1.5 'Open Sans', Verdana, Arial, sans-serif;}
+a{ color: #449fdb; cursor: pointer; padding: 0.1em 0; text-decoration: underline;}
 a:visited{ color: #999;}
 a:hover{ background: yellow; color: #333; text-decoration: underline;}
 
 h1, h2{ letter-spacing: -0.05em; text-align: center;}
-h1{ font-size: 3em; font-weight: 900;}
-h2{ color: #999; font-size: 1.5em;}
+h1{ color: #333; font-size: 3em; font-weight: 900; line-height: 1; margin: 1em 1em 0.5em;}
+h2{ font-size: 1.5em; margin: 0 1em 2em;}
+p{ margin: 2em;}
 
 table{ background: white; margin: 2em 0; width: 100%;}
 tr:hover{ background: #f7f7f7;}
@@ -29,21 +30,20 @@ tr:hover + tr th,
 tr:hover + tr td{ border-top-color: #333;}
 tr:last-child:hover th,
 tr:last-child:hover td{ border-bottom-color: #333;}
+table p{ display: inline-block; margin: 0;}
+table a{ padding: 0.25em 0.5em;}
 
 input{ border: none; border-radius: 4px; cursor: pointer; font-family: monospace; font-size: 1em; margin-right: 1em; padding: 0.5em;}
 input:focus{ background: yellow; outline: none;}
 
-p{ color: #999; margin: 2em;}
-p a{ padding: 0.1em 0;}
-
 .icon{ font-size: 1.5em; padding: 0 0.5em; text-align: center; width: 1em;}
-.name{ padding-left: 0;}
+.name{ color: #333; padding-left: 0;}
 .color{ border-top-color: transparent; color: white; font-family: monospace; white-space: nowrap;}
-.logo{ color: #ccc; font-family: monospace; text-align: right;}
+.logo{ color: #ccc; font-family: monospace; padding: 0; text-align: right;}
 tr:hover .logo{ color: #333;}
-.logo a{ border: 1px solid #ccc; margin-right: 1em;}
+.logo p{ margin: 0.5em;}
+.logo a{ border: 1px solid #ccc; display: inline-block; padding: 0 0.5em;}
 .logo a:hover{ border-color: #666;}
-.logo a:last-child{ margin-right: 0;}
 .link{ font-size: 0.9em; text-align: right;}
 
 .dribbble .icon{ color: #ea4c89;}
@@ -72,3 +72,17 @@ tr:hover .logo{ color: #333;}
 
 .youtube .icon{ color: #e52d27;}
 .youtube .color{ background: #e52d27;}
+
+@media (max-width: 991px) {
+  body{ font-size: 16px;}
+  table, tbody, tr, th, td, table p{ display: block; padding: 0; width: auto;}
+  table{ padding: 0;}
+  tr{ border: solid #ccc; border-width: 1px 0; margin-bottom: -1px;}
+  tr:hover{ background: white;}
+  th, td{ border-top: none; padding: 1em;}
+  table p{ margin-bottom: 1em;}
+  input{ display: block; font-size: 1.25em; margin: 0;}
+  .icon{ float: left; font-size: 3em; padding: 0.125em; width: auto;}
+  .name{ font-size: 1.5em;}
+  .logo, .link{ display: none;}
+}
