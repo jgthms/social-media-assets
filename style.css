@@ -1,0 +1,59 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td{ margin: 0; padding: 0;}
+table{ border-collapse: collapse; border-spacing: 0;}
+fieldset, img{ border: 0;}
+address, caption, cite, code, dfn, var{ font-style: normal; font-weight: normal;}
+ol, ul{ list-style: none;}
+caption, th{ text-align: left;}
+h1, h2, h3, h4, h5, h6{ font-size: 100%; font-weight: normal;}
+q:before, q:after{ content: '';}
+abbr, acronym{ border: 0;}
+
+html{ min-width: 900px; overflow-y: scroll;}
+body{ background: #f7f7f7 url(debut_light.png) repeat; color: #333; font: 14px/1.5 'Open Sans', Verdana, Arial, sans-serif; padding: 2em;}
+a{ color: #449fdb; cursor: pointer; text-decoration: underline;}
+a:visited{ color: #999;}
+a:hover{ background: yellow; color: #333; text-decoration: underline;}
+
+h1, h2{ letter-spacing: -0.05em; text-align: center;}
+h1{ font-size: 3em; font-weight: 900;}
+h2{ color: #999; font-size: 1.5em;}
+
+table{ background: white; color: white; margin: 2em 0; width: 100%;}
+th, td{ padding: 0.5em 0 0.5em 1em; vertical-align: middle;}
+
+input{ border: none; border-radius: 4px; box-shadow: inset 0 3px 3px rgba(0, 0, 0, 0.15); cursor: pointer; font-family: monospace; font-size: 1em; margin-right: 1em; padding: 0.5em;}
+input:focus{ background: yellow; box-shadow: inset 0 3px 3px rgba(0, 0, 0, 0.3); outline: none;}
+
+p{ color: #999; margin-top: 1em;}
+
+.icon{ background: white; font-size: 1.5em; padding: 0.25em; text-align: center; width: 1em;}
+.link{ background: white; padding: 0;}
+.link a{ display: block; padding: 0.75em 1em;}
+.color{ color: white; font-family: monospace; white-space: nowrap;}
+
+.dribbble{ background: #ea4c89;}
+.dribbble .icon{ color: #ea4c89;}
+
+.facebook{ background: #3b5998;}
+.facebook .icon{ color: #3b5998;}
+
+.flickr{ background: #0063dc;}
+.flickr .icon{ color: #0063dc;}
+
+.github{ background: #333333;}
+.github .icon{ color: #333333;}
+
+.google{ background: #dd4b39;}
+.google .icon{ color: #dd4b39;}
+
+.pinterest{ background: #e0242a;}
+.pinterest .icon{ color: #e0242a;}
+
+.tumblr{ background: #35465c;}
+.tumblr .icon{ color: #35465c;}
+
+.twitter{ background: #55acee;}
+.twitter .icon{ color: #55acee;}
+
+.youtube{ background: #e52d27;}
+.youtube .icon{ color: #e52d27;}

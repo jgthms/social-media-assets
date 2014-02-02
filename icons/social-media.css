@@ -1,0 +1,61 @@
+@font-face {
+  font-family: 'social-media';
+  src: url('social-media.eot?77986746');
+  src: url('social-media.eot?77986746#iefix') format('embedded-opentype'),
+       url('social-media.woff?77986746') format('woff'),
+       url('social-media.ttf?77986746') format('truetype'),
+       url('social-media.svg?77986746#social-media') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'social-media';
+    src: url('social-media.svg?77986746#social-media') format('svg');
+  }
+}
+*/
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "social-media";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+     
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon-dribbble:before { content: '\64'; } /* 'd' */
+.icon-facebook:before { content: '\66'; } /* 'f' */
+.icon-flickr:before { content: '\46'; } /* 'F' */
+.icon-github:before { content: '\47'; } /* 'G' */
+.icon-google:before { content: '\67'; } /* 'g' */
+.icon-pinterest:before { content: '\70'; } /* 'p' */
+.icon-tumblr:before { content: '\54'; } /* 'T' */
+.icon-twitter:before { content: '\74'; } /* 't' */
+.icon-youtube:before { content: '\79'; } /* 'y' */
